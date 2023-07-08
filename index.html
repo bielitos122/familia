@@ -1,0 +1,39 @@
+<html>
+
+<img src="images (2).jpg"
+style="width: 50%;" id="familyMemberImage">
+
+|<h4 id="familyMemberName"></h4>
+
+<button onclick="update();" >Próximo</button>
+
+<script>
+var images =
+["https://1.postimg.cc/Mkdhy@62/family.jpg","https://1.postimg.cc/L6HCYQM 0/grand-father.png", "https://1.posting.cc/JMFt/father.jpg",
+"https://1.postimg.cc/5ymDKL83/bro.jpg",
+"https://1.postimg.cc/JnL6wtro/sister.jpg", 
+"https://i.postimg.cc/bw52SK/mother.jpg"];
+var names = ["Album de Familia", "Rodrigo Silva",
+"Silva", "Roberto Silva", "Diego Silva", "Aline Silva", "Sonia Silva"]; 
+
+</script>
+
+<script>
+    var i = 0;
+function update()
+{
+i++;
+var numbersOfFamilyMemberInArray = 5
+if(i > numbersOfFamilyMemberInArray)
+{
+i = 0;
+}
+var updatedImage=images[i];
+var updatedName=names[i];
+document.getElementById("familyMember Image").src=updatedImage; 
+document.getElementById("familyMemberName").innerHTML=updatedName;
+}
+
+</script>
+
+</html>
